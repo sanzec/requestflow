@@ -1,0 +1,7 @@
+RequestFlow is a learning and portfolio project for managing software-access requests in a fictional organization.
+A requester can submit a request for a fictional software tool, explain why they need it, and view the status and history of their own requests.
+An assigned approver can review pending requests and approve or reject them. Rejection requires a reason. The system records who submitted the request, who made the decision, and when those actions occurred.
+The first version will support one request type and one approval step. Requests begin as Pending and can become Approved, Rejected, or Cancelled. Submitted requests cannot be edited. Requesters can cancel their own Pending requests and submit a new request if changes are needed. Cancelled requests remain recorded and cannot be approved. Users cannot approve their own requests.
+The purpose is to replace scattered email requests with a consistent submission process, a central approval queue, and a traceable decision history. A later dashboard will show pending requests and decision turnaround times. Technical monitoring will help identify application failures.
+All users and data are synthetic. Approval records a decision but does not grant access to software.
+The application will initially run in an Ubuntu VM on Atlas. The recommended stack is Python, Django, and PostgreSQL. Later stages will add Azure deployment, infrastructure automation, monitoring, and recovery testing.
